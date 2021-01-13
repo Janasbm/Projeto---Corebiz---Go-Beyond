@@ -1,0 +1,153 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito";
+}
+
+footer {
+    position: relative;
+    margin-top: 200px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 25px 0;
+}
+
+footer .address {
+    color: #fff;
+}
+
+footer .address h3 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+footer .address h3::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 45px;
+    background-color: #fff;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+
+footer .address p, 
+footer .addres a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 12px;
+}
+
+footer .contact ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+footer .contact ul li {
+    background-color: #fff;
+    margin-bottom: 25px;
+    width: 195px;
+    min-height: 38px;
+    text-align: center;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .contact ul li a {
+    text-transform: uppercase;
+    font-size: 12pz;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+}
+
+footer .contact ul li a::before {
+    content: '';
+    background-image: url('image/ico-email.png');
+    height: 16px;
+    width: 16px;
+    background-size: 100% 100%;
+    display: inline-block;
+    margin-right: 18px;
+}
+
+footer .contact ul li:last-child a::before {
+    background-image: url('image/ico-headphone.png');
+    width: 16px;
+}
+
+footer .contact ul li li {
+    margin-top: 25px;
+    margin-bottom: 28px;
+}
+
+footer .created {
+    color: #FFF;
+    align-items: center;
+    font-size: 10px;
+    font-weight: normal;
+}
+ 
+footer .created div {
+    width: 64.55px;
+    margin-left: 40px;
+    height: 35px;
+    display: inline-block;
+    position: relative;
+}
+
+footer .created div:last-child {
+    margin-left: 36.5px;
+}
+
+footer .created div img {
+    position: absolute;
+    bottom: -13;
+    width: 71.44px;
+    height: 18px;
+}
+
+@media screen and (max-width: 375px) {
+    footer {
+        background-color: #000;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;   
+        padding-top: 30px; 
+        padding-left: 20px; 
+    }
+ 
+    footer .contact {
+        display: flex;
+        margin: 27px;
+    }
+ 
+    footer .contact ul {
+        display: flex;
+    }  
+ 
+    footer .created {
+        margin: auto;
+        width: 225px;
+        justify-content: space-around;
+    }
+
+    footer .created p {
+        margin-right: 0%;
+    }
+ }
